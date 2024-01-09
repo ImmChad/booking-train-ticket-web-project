@@ -30,7 +30,7 @@
 						<li><a href="home"> <i class="fa fa-home"
 								style="font-size: 18px;"></i><span> Home</span>
 						</a></li>
-						<li><a href="#"> <img src="../download?image=${sessionScope.user.avatar}"
+						<li><a href="#"> <img src="./download/{sessionScope.user.avatar}"
 								class="img-circle" alt="Avatar"> <span>${sessionScope.username}</span>
 						</a></li>
 						<li><a href="../logout"> <i class="material-icons"

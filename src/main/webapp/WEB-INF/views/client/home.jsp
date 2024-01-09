@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="../resource/client/images/favicon.png">
-<title>Welcome to FlatShop</title>
+<title>Train Booking Ticket</title>
 <link href="../resource/client/css/bootstrap.css" rel="stylesheet">
 <link
 	href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,500italic,100italic,100'
@@ -19,6 +19,8 @@
 <link href="../resource/client/css/sequence-looptheme.css" rel="stylesheet"
 	media="all" />
 <link href="../resource/client/css/style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="resource/common/new-style.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script><![endif]-->
 </head>
 <body id="home">
@@ -34,7 +36,7 @@
 				
 				<!-- 			<div th:replace="client/common/ourbands :: ourbands"></div> -->
 
-			</div>
+			</div>x
 		</div>
 
 		<%@include file="common/footer.jsp"%>

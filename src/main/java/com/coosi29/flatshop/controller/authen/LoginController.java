@@ -45,16 +45,16 @@ public class LoginController {
 //		System.out.println("Avatar: " + userDTO.getFullname());
 //		System.out.println("Email: " + userDTO.getEmail());
 //
-//		String plainPassword = "soaika1810";
-//
-//		// Tạo đối tượng BCryptPasswordEncoder
-//		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-//
-//		// Mã hóa mật khẩu
-//		String hashedPassword = passwordEncoder.encode(plainPassword);
-//
-//
-//		System.out.println("NewPass: " + hashedPassword);
+		String plainPassword = "soaika1810";
+
+		// Tạo đối tượng BCryptPasswordEncoder
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+
+		// Mã hóa mật khẩu
+		String hashedPassword = passwordEncoder.encode(plainPassword);
+
+
+		System.out.println("NewPass: " + hashedPassword);
 
 		return "authen/login";
 	}

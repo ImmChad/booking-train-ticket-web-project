@@ -7,3 +7,17 @@ h1 {
 td {
 	padding: 20px;
 }
+
+.btn-kenny {
+    font-weight: 500;
+    color: #000000;
+    background: #F6B893;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #7B4600;
+}

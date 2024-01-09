@@ -15,8 +15,9 @@ public class DownLoadFileController {
 
 	@GetMapping(value = "/download")
 	public void download(HttpServletResponse response, @RequestParam("image") String image) {
-		final String uploadFolder = "/Users/mac/Kenny/images/";
-		File file = new File(uploadFolder + File.separator + image);
+		final String uploadFolder = "E://images//";
+		File file = new File(uploadFolder, image);
+//		File file = new File(uploadFolder + File.separator + image);
 		if (file.exists()) {
 			try {
 				Files.copy(file.toPath(), response.getOutputStream());

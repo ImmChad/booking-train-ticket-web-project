@@ -1,13 +1,11 @@
 package com.coosi29.flatshop.controller.admin;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-
-import javax.persistence.criteria.CriteriaBuilder.In;
-import javax.servlet.http.HttpServletRequest;
-
+import com.coosi29.flatshop.model.CategoryDTO;
+import com.coosi29.flatshop.model.ProductDTO;
+import com.coosi29.flatshop.model.SaleDTO;
+import com.coosi29.flatshop.service.CategoryService;
+import com.coosi29.flatshop.service.ProductService;
+import com.coosi29.flatshop.service.SaleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,12 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.coosi29.flatshop.model.CategoryDTO;
-import com.coosi29.flatshop.model.ProductDTO;
-import com.coosi29.flatshop.model.SaleDTO;
-import com.coosi29.flatshop.service.CategoryService;
-import com.coosi29.flatshop.service.ProductService;
-import com.coosi29.flatshop.service.SaleService;
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 // Product Manager
 
@@ -120,7 +117,7 @@ public class ProductManagementAdminController {
 			int lastIndex = originalFilename.lastIndexOf(".");
 			String ext = originalFilename.substring(lastIndex);
 			String avatarFilename = System.currentTimeMillis() + ext;
-			File newfile = new File("/Users/mac/Kenny/images/" + avatarFilename);
+			File newfile = new File("E://images//" + avatarFilename);
 			FileOutputStream fileOutputStream;
 			try {
 				fileOutputStream = new FileOutputStream(newfile);
@@ -183,7 +180,7 @@ public class ProductManagementAdminController {
 			int lastIndex = originalFilename.lastIndexOf(".");
 			String ext = originalFilename.substring(lastIndex);
 			String avatarFilename = System.currentTimeMillis() + ext;
-			File newfile = new File("/Users/mac/Kenny/images/" + avatarFilename);
+			File newfile = new File("E://images//" + avatarFilename);
 			FileOutputStream fileOutputStream;
 			try {
 				fileOutputStream = new FileOutputStream(newfile);
